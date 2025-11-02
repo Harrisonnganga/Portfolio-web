@@ -1,0 +1,176 @@
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s, transform 0.6s;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.project-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #0a4161;
+    transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.active-nav::after {
+    width: 100%;
+}
+.hero-gradient {
+            background: linear-gradient(135deg, #33b5c6 0%, #174949 100%)
+        }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px); 
+            transition: opacity 0.6s, transform 0.6s;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0% { transform: translate(0, 0px); }
+            50% { transform: translate(0, -10px); }
+            100% { transform: translate(0, 0px); }
+        }
+        
+        .text-shadow {
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+
+.skill-category {
+    transition: all 0.3s ease;
+}
+
+.skill-category:hover {
+    transform: translateY(-5px);
+}
+
+.skill-item {
+    transition: all 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: scale(1.05);
+}
+
+.skill-bar {
+    height: 8px;
+    border-radius: 4px;
+    background-color: #e5e7eb;
+    overflow: hidden;
+}
+
+.skill-progress {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 1.5s ease-in-out;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s, transform 0.6s;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.floating {
+    animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, -10px);
+    }
+
+    100% {
+        transform: translate(0, 0px);
+    }
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.blog-card {
+    transition: transform 0.3s;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+}
+
+.form-message {
+    display: none;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 16px;
+}
+
+.form-message.success {
+    display: block;
+    background-color: #d1fae5;
+    color: #065f46;
+    border: 1px solid #a7f3d0;
+}
+
+.form-message.error {
+    display: block;
+    background-color: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #fecaca;
+}

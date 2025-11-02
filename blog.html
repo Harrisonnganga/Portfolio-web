@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Harry </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-10">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-blue-600">Harry</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="nav-link active-nav">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <button class="md:hidden text-gray-600 focus:outline-none" id="mobileMenuButton">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-white py-2 shadow-lg" id="mobileMenu">
+            <a href="index.html" class="block py-2 px-6 hover:bg-gray-100">Home</a>
+            <a href="about.html" class="block py-2 px-6 hover:bg-gray-100">About</a>
+            <a href="projects.html" class="block py-2 px-6 hover:bg-gray-100">Projects</a>
+            <a href="blog.html" class="block py-2 px-6 hover:bg-gray-100">Blog</a>
+            <a href="contact.html" class="block py-2 px-6 hover:bg-gray-100">Contact</a>
+        </div>
+    </nav>
+
+
+    <!-- Blog Header -->
+    <section class="pt-24 pb-16 md:pt-32 md:pb-24 hero-gradient text-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <!-- Text Content -->
+                <div class="md:w-1/2 text-center md:text-left mb-12 md:mb-0">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4 fade-in text-shadow">My Blog</h1>
+                    <h2 class="text-xl md:text-2xl mb-8 fade-in text-indigo-100"><strong>Thoughts, tutorials, and insights about web development</strong></h2>
+                    
+                </div>
+                
+                
+                <!-- Visual Element -->
+                <div class="md:w-2/5 flex justify-center fade-in">
+                    <div class="relative">
+                        <!-- Main graphic -->
+                        <div class="w-64 h-64 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm border border-white/30 floating">
+                            <div class="text-center">
+                                <div class="w-32 h-32 bg-gradient-to-br from-white/30 to-white/10 rounded-full flex items-center justify-center mx-auto mb-4 border border-white/20">
+                                    <i class="fas fa-bolg text-white text-4xl"></i>
+                                </div>
+                                <p class="text-white font-semibold">Blog</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Floating elements -->
+                        <div class="absolute -top-4 -left-4 w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center shadow-lg floating" style="animation-delay: 0.5s;">
+                            <i class="fas fa-server text-white text-xl"></i>
+                        </div>
+                        <div class="absolute top-1/2 -left-8 w-12 h-12 bg-orange-400 rounded-full flex items-center justify-center shadow-lg floating" style="animation-delay: 1.5s;">
+                            <i class="fab fa-linux text-white text-lg"></i>
+                        </div>
+                        <div class="absolute -bottom-4 -right-4 w-16 h-16 bg-green-400 rounded-full flex items-center justify-center shadow-lg floating" style="animation-delay: 1s;">
+                            <i class="fas fa-tachometer-alt text-white text-xl"></i>
+                        </div>
+                        <div class="absolute top-1/2 -right-8 w-12 h-12 bg-blue-400 rounded-full flex items-center justify-center shadow-lg floating" style="animation-delay: 1.5s;">
+                            <i class="fas fa-shield-alt text-white text-lg"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Blog Post 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md blog-card fade-in">
+                    <div class="h-48 bg-gradient-to-r from-green-400 to-indigo-500 flex items-center justify-center text-white text-4xl">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-sm text-green-600 font-semibold">Virtual Desktop • Dec 9, 2024</span>
+                        <h3 class="text-xl font-bold my-2">Maximizing Focus with Virtual Desktops: A Quick Guide</h3>
+                        <p class="text-gray-600 mb-4">Virtual desktops can significantly enhance productivity in today's busy work environment. Here’s how to make the most of them:.</p>
+                        <a href="https://www.linkedin.com/pulse/maximizing-focus-virtual-desktops-quick-guide-harrison-ng-ang-a-oax0f/?trackingId=m38vVvjOQSC8M0xd0ulnfA%3D%3D" class="text-green-600 font-semibold hover:text-green-800 transition duration-300">Read More →</a>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md blog-card fade-in">
+                    <div class="h-48 bg-gradient-to-r from-green-400 to-teal-500 flex items-center justify-center text-white text-4xl">
+                        <i class="fas fa-mobile"></i>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-sm text-green-600 font-semibold">Mastering Your Inbox: • Nov 2, 2025</span>
+                        <h3 class="text-xl font-bold my-2">How to Organize Emails Using Filters and Folders</h3>
+                        <p class="text-gray-600 mb-4">Are you overwhelmed by the clutter of emails in your inbox, constantly worried that you might miss an important message?</p>
+                        <a href="https://www.linkedin.com/pulse/mastering-your-inbox-how-organize-emails-using-filters-ng-ang-a-vrpuf" class="text-green-600 font-semibold hover:text-green-800 transition duration-300">Read More →</a>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md blog-card fade-in">
+                    <div class="h-48 bg-gradient-to-r from-purple-400 to-pink-500 flex items-center justify-center text-white text-4xl">
+                        <i class="fab fa-linux"></i>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-sm text-green-600 font-semibold">SystemAdmin Playbook • Nov 3, 2025</span>
+                        <h3 class="text-xl font-bold my-2">Linux</h3>
+                        <p class="text-gray-600 mb-4">This is a single, massive repository that serves as your personal (and public) notebook. It's less about code and more about documenting procedures, best practices, and solutions.</p>
+                        <a href="https://github.com/Harrisonnganga/System-Admin-Playbook" class="text-green-600 font-semibold hover:text-green-800 transition duration-300">Read More →</a>
+                    </div>
+                </div>
+
+                <!-- Blog Post 4 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md blog-card fade-in">
+                    <div class="h-48 bg-gradient-to-r from-yellow-400 to-orange-500 flex items-center justify-center text-white text-4xl">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-sm text-blue-600 font-semibold">Security • March 22, 2023</span>
+                        <h3 class="text-xl font-bold my-2">Web Security Best Practices</h3>
+                        <p class="text-gray-600 mb-4">Essential security measures every web developer should implement to protect user data.</p>
+                        <a href="#" class="text-blue-600 font-semibold hover:text-blue-800 transition duration-300">Read More →</a>
+                    </div>
+                </div>
+
+                <!-- Blog Post 5 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md blog-card fade-in">
+                    <div class="h-48 bg-gradient-to-r from-red-400 to-pink-500 flex items-center justify-center text-white text-4xl">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-sm text-blue-600 font-semibold">Performance • February 15, 2023</span>
+                        <h3 class="text-xl font-bold my-2">Optimizing Website Performance</h3>
+                        <p class="text-gray-600 mb-4">Techniques to improve loading times and create faster, more responsive web applications.</p>
+                        <a href="#" class="text-blue-600 font-semibold hover:text-blue-800 transition duration-300">Read More →</a>
+                    </div>
+                </div>
+
+                <!-- Blog Post 6 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md blog-card fade-in">
+                    <div class="h-48 bg-gradient-to-r from-teal-400 to-blue-500 flex items-center justify-center text-white text-4xl">
+                        <i class="fas fa-mobile"></i>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-sm text-blue-600 font-semibold">Mobile • January 8, 2023</span>
+                        <h3 class="text-xl font-bold my-2">Progressive Web Apps in 2023</h3>
+                        <p class="text-gray-600 mb-4">How PWAs are changing the mobile experience and why they matter for developers.</p>
+                        <a href="#" class="text-blue-600 font-semibold hover:text-blue-800 transition duration-300">Read More →</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Newsletter Section -->
+            <div class="max-w-2xl mx-auto mt-16 bg-gray-100 rounded-lg p-8 fade-in">
+                <h3 class="text-2xl font-bold text-center mb-4">Subscribe to My Newsletter</h3>
+                <p class="text-center text-gray-600 mb-6">Get the latest updates on my projects, blog posts, and development tips.</p>
+                <form class="flex flex-col sm:flex-row gap-4">
+                    <input type="email" placeholder="Your email address" class="flex-grow px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500">
+                    <button type="submit" class="bg-green-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-green-500 transition duration-300">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+     <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <script>
+						document.write(new Date().getFullYear());
+					</script>
+                    <p>&copy; Harrison. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="https://www.linkedin.com/in/harrison-ng-ang-a-91171a259/" class="text-gray-300 hover:text-white transition duration-300">
+                        <i class="fab fa-linkedin text-xl"></i>
+                    </a>
+                    <a href="https://github.com/Harrisonnganga" class="text-gray-300 hover:text-white transition duration-300">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                    <a href="https://instagram.com/nganga2363?igshid=NTc4MTIwNjQ2YQ==" class="text-gray-300 hover:text-white transition duration-300">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
